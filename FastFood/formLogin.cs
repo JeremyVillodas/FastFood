@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FastFood
 {
@@ -19,10 +20,7 @@ namespace FastFood
         public formLogin()
         {
             InitializeComponent();
-            for (int i = 0; i < users.Length; i++)
-            {
-                dataGridView1.Rows.Add(users[i], passwords[i]);
-            }
+           
         }
         private void blockAccounts(int index)
         {
@@ -74,6 +72,25 @@ namespace FastFood
                 usernameBox.Clear();
                 passwordBox.Focus();
             }
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pictureBox2.BringToFront();
+            pictureBox2.Visible = true;
+            passwordBox.PasswordChar = '*';
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Visible = true;
+            passwordBox.PasswordChar = '\0';
+            pictureBox2.Visible = false;
         }
     }
     }

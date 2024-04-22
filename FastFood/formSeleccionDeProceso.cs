@@ -21,5 +21,33 @@ namespace FastFood
         {
 
         }
+
+        private void btn_sign_off_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formLogin formLogin = new formLogin();
+            formLogin.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formContolPedidoPorMesa formNext = new formContolPedidoPorMesa();
+            formNext.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formControlDeDelivery formNext = new formControlDeDelivery();
+            formNext.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formControlDeReservaciones formNext = new formControlDeReservaciones();
+            formNext.ShowDialog();
+        }
     }
 }

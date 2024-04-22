@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formContolPedidoPorMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formContolPedidoPorMesa.Designer.cs">
+      <DependentUpon>formContolPedidoPorMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formControlDeDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formControlDeDelivery.Designer.cs">
+      <DependentUpon>formControlDeDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formControlDeReservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formControlDeReservaciones.Designer.cs">
+      <DependentUpon>formControlDeReservaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formContolPedidoPorMesa.resx">
+      <DependentUpon>formContolPedidoPorMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formControlDeDelivery.resx">
+      <DependentUpon>formControlDeDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formControlDeReservaciones.resx">
+      <DependentUpon>formControlDeReservaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
